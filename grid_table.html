@@ -8,6 +8,7 @@
     <title>Table using Grid</title>
     <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Signika&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/github-fork-ribbon-css/0.2.3/gh-fork-ribbon.min.css" />
     <style>
         body{
             margin: 0;
@@ -151,10 +152,62 @@
             font-size: 3.5rem;
             font-family: 'Signika', sans-serif;
         }
+
+        footer{
+            background: black;
+            padding: 5%;
+            display: grid;
+            grid-template-rows: repeat(2, 1fr);
+        }
+        .links{
+            width: 70%;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: repeat(5, 1fr);
+        }
+        .links a{
+            color: rgb(255, 183, 0);
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            text-decoration: none;
+            font-size: 1.2rem;
+            width: fit-content;
+            text-align: center;
+            margin: auto;
+            padding: 2%;
+            width: 150px;
+            font-weight: bold;
+            transition: 0.2s ease-in-out;
+        }
+        .links a:hover{
+            color: rgb(255, 60, 0);
+            font-size: 1.5rem;
+            text-shadow: 0 0 45px rgba(255, 255, 255, 0.918);
+        }
+        .copyright{
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            color: rgba(255, 255, 255, 0.856);
+            font-size: 1.3rem;
+            text-align: center;
+            margin: auto;
+        }
+        .copyright a{
+            text-decoration: none;
+            color: orangered;
+        }
+        .copyright a:hover{
+            text-decoration: underline;
+        }
+        .github-fork-ribbon:before { 
+            background-color: #333;
+        }
     </style>
 </head>
 
 <body>
+    <a class="github-fork-ribbon" href="https://github.com/DeRoyace/Fancy-Table-Design" data-ribbon="Fork me on GitHub" title="Fork me on GitHub">
+        Fork me on GitHub
+    </a>
+
     <div class="title">
         <h1>Modern Table Design 2</h1>
         <h2>Using Grid display</h2>
@@ -218,6 +271,19 @@
         <div class="col-7 row-8 subjects" onmouseover="highlight_row(8)">subject</div>
 
     </div>
+
+    <footer>
+        <div class="links">
+            <a href="https://twitter.com/deRohitRoyace" class="link-1">Twitter</a>
+            <a href="https://github.com/DeRoyace" class="link-2">Github</a>
+            <a href="" class="link-3">Discord</a>
+            <a href="https://www.linkedin.com/in/rohit-roy-51b2b6222/" class="link-4">Linkedin</a>
+            <a href="https://www.instagram.com/de_rohit_roy/" class="link-5">Instagram</a>
+        </div>
+        <div class="copyright">
+            <p>Copyright ©️ Roys Codes 2022. All rights reserved. <a href="https://github.com/DeRoyace" target="_blank">DeRoyace</a></p>
+        </div>
+    </footer>
 
     <script>
         var row_Class = "";
